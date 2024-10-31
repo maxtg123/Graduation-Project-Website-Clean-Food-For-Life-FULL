@@ -1,0 +1,85 @@
+<form #registerForm="ngForm" (ngSubmit)="register()" novalidate>
+  <!-- Trường nhập Username -->
+  <div class="mb-3">
+    <label for="username" class="form-label">Họ và tên</label>
+    <input
+      [(ngModel)]="registerRequest.username"
+      name="username"
+      type="text"
+      class="form-control"
+      id="username"
+      placeholder="Enter username"
+      required
+      #usernameInput="ngModel"
+    >
+    <!-- Thông báo lỗi cho Username -->
+    <div *ngIf="usernameInput.invalid && (usernameInput.dirty || usernameInput.touched)" class="text-danger">
+      <div *ngIf="usernameInput.errors?.['required']">Họ và tên người dùng là bắt buộc.</div>
+    </div>
+  </div>
+
+  <!-- Trường nhập Email -->
+  <div class="mb-3">
+    <label for="email" class="form-label">Địa chỉ email</label>
+    <input
+      [(ngModel)]="registerRequest.email"
+      name="email"
+      type="email"
+      class="form-control"
+      id="email"
+      placeholder="name@example.com"
+      required
+      email
+      #emailInput="ngModel"
+    >
+    <!-- Thông báo lỗi cho Email -->
+    <div *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)" class="text-danger">
+      <div *ngIf="emailInput.errors?.['required']">Email là bắt buộc.</div>
+      <div *ngIf="emailInput.errors?.['email']">Định dạng email không hợp lệ.</div>
+    </div>
+  </div>
+
+  <!-- Trường nhập Password -->
+  <div class="mb-3">
+    <label for="password" class="form-label">Mật khẩu</label>
+    <input
+      [(ngModel)]="registerRequest.password"
+      name="password"
+      type="password"
+      class="form-control"
+      id="password"
+      placeholder="Password"
+      required
+      minlength="6"
+      #passwordInput="ngModel"
+    >
+    <!-- Thông báo lỗi cho Password -->
+    <div *ngIf="passwordInput.invalid && (passwordInput.dirty || passwordInput.touched)" class="text-danger">
+      <div *ngIf="passwordInput.errors?.['required']">Mật khẩu là bắt buộc.</div>
+      <div *ngIf="passwordInput.errors?.['minlength']">Mật khẩu phải dài ít nhất 6 ký tự.</div>
+    </div>
+  </div>
+
+  <!-- Nút đăng ký -->
+  <button type="submit" class="btn btn-primary" [disabled]="registerForm.invalid">
+    Register
+  </button>
+
+  <!-- Đường dẫn tới trang đăng nhập -->
+  <p class="mt-3">
+    Bạn đã có tài khoản?
+    <a (click)="goToLogin()" style="cursor: pointer; color: blue;">Đăng nhập</a>
+  </p>
+
+  <!-- Hiển thị thông báo đăng ký thành công nếu có -->
+  <div *ngIf="successMsg" class="alert alert-success mt-3">
+    {{ successMsg }}
+  </div>
+
+  <!-- Hiển thị lỗi nếu có lỗi -->
+  <div *ngIf="errorMsg.length > 0" class="alert alert-danger mt-3">
+    <ul>
+      <li *ngFor="let error of errorMsg">{{ error }}</li>
+    </ul>
+  </div>
+</form>

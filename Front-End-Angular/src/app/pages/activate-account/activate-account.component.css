@@ -1,0 +1,288 @@
+body {
+  background-color: #f8f9fa; /* Màu nền nhẹ */
+  display: flex; /* Sử dụng flexbox */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  height: 100vh; /* Chiều cao 100% viewport */
+  margin: 0; /* Xóa margin mặc định */
+}
+
+/* Form đăng nhập */
+form {
+  max-width: 400px; /* Chiều rộng tối đa của form */
+  width: 100%; /* Đảm bảo form chiếm toàn bộ chiều rộng tối đa */
+  padding: 20px; /* Padding cho form */
+  background-color: #ffffff; /* Màu nền trắng */
+  border-radius: 8px; /* Bo góc cho form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng cho form */
+}
+
+/* Nhãn */
+label {
+  font-weight: bold; /* In đậm nhãn */
+  color: #333333; /* Màu chữ tối */
+}
+
+/* Ô input */
+input.form-control {
+  border: 1px solid #ced4da; /* Đường viền cho input */
+  border-radius: 4px; /* Bo góc cho input */
+}
+
+/* Nhập liệu không hợp lệ */
+.text-danger {
+  font-size: 0.875rem; /* Kích thước chữ nhỏ hơn */
+  margin-top: 0.25rem; /* Khoảng cách giữa input và thông báo lỗi */
+}
+
+/* Nút đăng nhập */
+button.btn {
+  width: 100%; /* Chiều rộng 100% */
+  padding: 10px; /* Padding cho nút */
+  border-radius: 4px; /* Bo góc cho nút */
+  background-color: #28a745; /* Màu nền xanh lá cây */
+  color: white; /* Màu chữ trắng */
+  border: none; /* Xóa đường viền mặc định */
+  font-size: 16px; /* Kích thước chữ */
+}
+
+/* Thay đổi màu sắc khi hover */
+button.btn:hover {
+  background-color: #218838; /* Màu nền khi hover (màu xanh lá cây đậm hơn) */
+}
+
+
+
+
+
+body {
+  background-color: #f8f9fa; /* Màu nền nhẹ */
+  display: flex; /* Sử dụng flexbox */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  height: 100vh; /* Chiều cao 100% viewport */
+  margin: 0; /* Xóa margin mặc định */
+}
+
+button.btn {
+  width: 100%; /* Chiều rộng 100% */
+  padding: 10px; /* Padding cho nút */
+  border-radius: 4px; /* Bo góc cho nút */
+  background-color: #00ff00; /* Màu nền xanh lá cây */
+  color: white; /* Màu chữ trắng */
+  border: none; /* Xóa đường viền mặc định */
+  font-size: 16px; /* Kích thước chữ */
+}
+
+/* Form đăng nhập và đăng ký */
+form {
+  max-width: 600px; /* Chiều rộng tối đa của form */
+  width: 600px; /* Đảm bảo form chiếm toàn bộ chiều rộng tối đa */
+  padding: 20px; /* Padding cho form */
+  background-color: #ffffff; /* Màu nền trắng */
+  border-radius: 8px; /* Bo góc cho form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng cho form */
+}
+
+/* Nhãn */
+label {
+  font-weight: bold; /* In đậm nhãn */
+  color: #333333; /* Màu chữ tối */
+}
+
+/* Ô input */
+input.form-control {
+  border: 1px solid #ced4da; /* Đường viền cho input */
+  border-radius: 4px; /* Bo góc cho input */
+}
+
+/* Nhập liệu không hợp lệ */
+.text-danger {
+  font-size: 0.875rem; /* Kích thước chữ nhỏ hơn */
+  margin-top: 0.25rem; /* Khoảng cách giữa input và thông báo lỗi */
+}
+
+/* Nút đăng nhập và đăng ký */
+button.btn {
+  width: 100%; /* Chiều rộng 100% */
+  padding: 10px; /* Padding cho nút */
+  border-radius: 4px; /* Bo góc cho nút */
+  background-color: #28a745; /* Màu nền xanh lá cây */
+  color: white; /* Màu chữ trắng */
+  border: none; /* Xóa đường viền mặc định */
+  font-size: 16px; /* Kích thước chữ */
+}
+
+/* Thay đổi màu sắc khi hover */
+button.btn:hover {
+  background-color: #218838; /* Màu nền khi hover (màu xanh lá cây đậm hơn) */
+}
+
+
+
+
+
+
+
+
+body {
+  background-color: #f8f9fa; /* Màu nền nhẹ */
+  display: flex; /* Sử dụng flexbox */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  height: 100vh; /* Chiều cao 100% viewport */
+  margin: 0; /* Xóa margin mặc định */
+}
+
+button.btn {
+  width: 100%; /* Chiều rộng 100% */
+  padding: 10px; /* Padding cho nút */
+  border-radius: 4px; /* Bo góc cho nút */
+  background-color: #00ff00; /* Màu nền xanh lá cây */
+  color: white; /* Màu chữ trắng */
+  border: none; /* Xóa đường viền mặc định */
+  font-size: 16px; /* Kích thước chữ */
+}
+
+/* Form đăng nhập và đăng ký */
+form {
+  max-width: 600px; /* Chiều rộng tối đa của form */
+  width: 600px; /* Đảm bảo form chiếm toàn bộ chiều rộng tối đa */
+  padding: 20px; /* Padding cho form */
+  background-color: #ffffff; /* Màu nền trắng */
+  border-radius: 8px; /* Bo góc cho form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng cho form */
+}
+
+/* Nhãn */
+label {
+  font-weight: bold; /* In đậm nhãn */
+  color: #333333; /* Màu chữ tối */
+}
+
+/* Ô input */
+input.form-control {
+  border: 1px solid #ced4da; /* Đường viền cho input */
+  border-radius: 4px; /* Bo góc cho input */
+}
+
+/* Nhập liệu không hợp lệ */
+.text-danger {
+  font-size: 0.875rem; /* Kích thước chữ nhỏ hơn */
+  margin-top: 0.25rem; /* Khoảng cách giữa input và thông báo lỗi */
+}
+
+/* Nút đăng nhập và đăng ký */
+button.btn {
+  width: 100%; /* Chiều rộng 100% */
+  padding: 10px; /* Padding cho nút */
+  border-radius: 4px; /* Bo góc cho nút */
+  background-color: #28a745; /* Màu nền xanh lá cây */
+  color: white; /* Màu chữ trắng */
+  border: none; /* Xóa đường viền mặc định */
+  font-size: 16px; /* Kích thước chữ */
+}
+
+/* Thay đổi màu sắc khi hover */
+button.btn:hover {
+  background-color: #218838; /* Màu nền khi hover (màu xanh lá cây đậm hơn) */
+}
+
+
+.login-container {
+  width: 800px !important;
+  margin-top: 15%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Đặt chiều cao tối đa cho body và căn giữa nội dung */
+body {
+  height: 100vh; /* Chiều cao 100% của viewport */
+  display: flex; /* Sử dụng Flexbox để căn giữa */
+  justify-content: center; /* Canh giữa theo chiều ngang */
+  align-items: center; /* Canh giữa theo chiều dọc */
+  margin: 0; /* Xóa khoảng cách mặc định */
+  background-color: #f0f0f0; /* Màu nền cho toàn bộ trang */
+}
+
+/* Đặt chiều rộng tối đa cho form */
+form {
+  max-width: 600px; /* Chiều rộng tối đa của form */
+  width: 600px; /* Đảm bảo form chiếm toàn bộ chiều rộng */
+  padding: 20px; /* Thêm khoảng cách bên trong form */
+  border: 1px solid #ccc; /* Đường viền nhẹ xung quanh form */
+  border-radius: 8px; /* Bo tròn các góc của form */
+  background-color: #f9f9f9; /* Màu nền nhẹ cho form */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng cho form */
+}
+
+/* Đặt kiểu cho nhãn của các trường */
+.form-label {
+  font-weight: bold; /* Đậm chữ cho nhãn */
+  margin-bottom: 5px; /* Khoảng cách giữa nhãn và trường nhập */
+  display: block; /* Hiển thị nhãn như một khối */
+}
+
+/* Đặt kiểu cho các trường nhập */
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Đảm bảo trường nhập chiếm toàn bộ chiều rộng */
+  padding: 10px; /* Khoảng cách bên trong trường nhập */
+  border: 1px solid #ced4da; /* Đường viền cho trường nhập */
+  border-radius: 4px; /* Bo tròn góc cho trường nhập */
+  transition: border-color 0.3s; /* Hiệu ứng chuyển tiếp cho đường viền */
+}
+
+/* Thay đổi màu đường viền khi trường nhập có lỗi */
+input:invalid {
+  border-color: #dc3545; /* Đỏ cho trường nhập không hợp lệ */
+}
+
+/* Đặt kiểu cho nút đăng nhập */
+button {
+  width: 100%; /* Đảm bảo nút chiếm toàn bộ chiều rộng */
+  padding: 10px; /* Khoảng cách bên trong nút */
+  background-color: #007bff; /* Màu nền cho nút */
+  color: white; /* Màu chữ trắng */
+  border: none; /* Không có đường viền */
+  border-radius: 4px; /* Bo tròn góc cho nút */
+  cursor: pointer; /* Hiệu ứng con trỏ khi di chuột qua nút */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển tiếp cho màu nền */
+}
+
+/* Thay đổi màu nền khi di chuột qua nút */
+button:hover {
+  background-color: #0056b3; /* Màu nền khi di chuột qua nút */
+}
+
+/* Đặt kiểu cho thông báo lỗi */
+.text-danger {
+  font-size: 0.875em; /* Kích thước chữ cho thông báo lỗi */
+  margin-top: 5px; /* Khoảng cách giữa trường nhập và thông báo lỗi */
+}
+
+/* Đặt kiểu cho liên kết tạo tài khoản */
+a {
+  color: #007bff; /* Màu chữ cho liên kết */
+  text-decoration: none; /* Không có gạch chân cho liên kết */
+}
+
+/* Thay đổi màu chữ cho liên kết khi di chuột qua */
+a:hover {
+  text-decoration: underline; /* Gạch chân cho liên kết khi di chuột qua */
+}

@@ -1,0 +1,31 @@
+.user {
+  background-color: #f8f9fa; /* Màu nền cho toàn bộ phần user */
+}
+
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng cho khung */
+}
+
+.labels {
+  font-weight: 500; /* Tăng độ dày của chữ */
+  color: #495057; /* Màu chữ nhạt hơn */
+}
+
+.profile-button {
+  width: 100%; /* Đảm bảo nút lưu chiếm toàn bộ chiều rộng */
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* Màu cho nút chỉnh sửa */
+  border: none; /* Bỏ viền nút */
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Màu cho nút khi hover */
+}
+
+.text-center {
+  color: #000; /* Đảm bảo chữ có màu khác với màu nền */
+  margin-top: 10px; /* Khoảng cách giữa ảnh và chữ */
+}
+
