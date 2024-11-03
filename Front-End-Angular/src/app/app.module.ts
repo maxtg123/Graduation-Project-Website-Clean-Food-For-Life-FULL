@@ -16,6 +16,8 @@ import {ProfileComponent} from "./module/profile/profile.component";
 import {RouterLink} from "@angular/router";
 import { CartComponent } from './module/cart/cart.component';
 import {CarouselModule} from "primeng/carousel";
+import { ShopDetailsComponent } from './module/shop-details/shop-details.component';
+import { ShopingCartComponent } from './module/shoping-cart/shoping-cart.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import {CarouselModule} from "primeng/carousel";
     IndexComponent,
     HomeComponent,
     CartComponent,
+    ShopDetailsComponent,
+    ShopingCartComponent,
 
 
 

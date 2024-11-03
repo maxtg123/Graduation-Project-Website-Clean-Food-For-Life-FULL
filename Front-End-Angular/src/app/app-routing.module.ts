@@ -7,6 +7,8 @@ import { HomeComponent } from "./module/home/home.component";
 import { AuthGuard } from './auth/auth.guard';
 import {LoginPageComponent} from "./pages/login-page/login-page.component";
 import {ProfileComponent} from "./module/profile/profile.component";
+import {ShopDetailsComponent} from "./module/shop-details/shop-details.component";
+import {ShopingCartComponent} from "./module/shoping-cart/shoping-cart.component";
 
  // Đảm bảo đường dẫn chính xác
 
@@ -19,10 +21,15 @@ const routes: Routes = [
     redirectTo: 'index',
     pathMatch: 'full'
   },
-
+  { path: 'details', component: ShopDetailsComponent },
+  { path: 'details/:id', component: ShopDetailsComponent },
   {
     path: 'login',
     component: LoginPageComponent
+  },
+  {
+    path: 'shoping-cart',
+    component: ShopingCartComponent
   },
   {
     path: 'register',

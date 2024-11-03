@@ -6,4 +6,12 @@ export interface Product {
   price: number;
   category?: string;
   title: string;
+  rating: number;
+
+
+
+
+  reviewsCount: number;
+  availability: boolean;
+  additionalInfo: string;
 }

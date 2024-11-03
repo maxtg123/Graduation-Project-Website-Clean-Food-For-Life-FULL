@@ -1,6 +1,8 @@
 package com.example.Graduation_Project_Website_Clean_Food_For_Life.controller;
 
+import com.example.Graduation_Project_Website_Clean_Food_For_Life.Exception.ResourceNotFoundException;
 import com.example.Graduation_Project_Website_Clean_Food_For_Life.dto.ProductDTO;
+import com.example.Graduation_Project_Website_Clean_Food_For_Life.dto.ProductDetailDTO;
 import com.example.Graduation_Project_Website_Clean_Food_For_Life.entity.Category;
 import com.example.Graduation_Project_Website_Clean_Food_For_Life.entity.Product;
 import com.example.Graduation_Project_Website_Clean_Food_For_Life.repository.ProductRepository;
@@ -39,6 +41,8 @@ public class ProductController {
     @Autowired
     private CategoryService categoryService;
 
+
+
     @GetMapping("/list")
     public List<ProductDTO> getAllProducts() {
         return productRepository.findAll().stream()
@@ -49,8 +53,6 @@ public class ProductController {
                         product.getPrice()))
                 .collect(Collectors.toList());
     }
-
-
 
 
     @GetMapping("/image/{fileName}")
@@ -66,6 +68,14 @@ public class ProductController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
         }
     }
+
+
+   @GetMapping("/{id}")
+   public ResponseEntity<Product> getProductDetails(@PathVariable Long id) {
+       Product product = productService.getProductById(id);
+      return ResponseEntity.ok(product);
+   }
+
 
 
 

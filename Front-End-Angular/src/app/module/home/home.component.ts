@@ -146,16 +146,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
       this.userId = Number(localStorage.getItem('userId'));
     }
 
-    // Gọi phương thức để lấy danh sách sản phẩm
-    // this.productService.getProducts().subscribe(
-    //   (data: Product[]) => {
-    //     this.products = data; // Gán danh sách sản phẩm vào mảng products
-    //     console.log('Danh sách sản phẩm:', this.products); // Log để kiểm tra dữ liệu
-    //   },
-    //   (error) => {
-    //     console.error('Lỗi khi lấy danh sách sản phẩm:', error);
-    //   }
-    // );
     this.productService.getProducts().subscribe(
       (data: Product[]) => {
         this.products = data.map(product => {

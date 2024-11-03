@@ -28,7 +28,6 @@ public class SecurityConfig {
                         .requestMatchers("/api/profile/**").authenticated() // Bảo vệ endpoint cập nhật thông tin
 //                        .requestMatchers("/api/products","/api/products/**","/api/products/image/**").permitAll()
                                 .requestMatchers("/api/products", "/api/products/**", "/api/products/image/**").permitAll()
-
                                 .anyRequest().authenticated() // Các yêu cầu khác cần xác thực
                 )
                 .csrf(csrf -> csrf.disable()); // Tắt CSRF nếu bạn đang sử dụng API

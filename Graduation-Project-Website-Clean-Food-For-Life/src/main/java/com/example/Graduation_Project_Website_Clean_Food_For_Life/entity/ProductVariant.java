@@ -1,6 +1,6 @@
 package com.example.Graduation_Project_Website_Clean_Food_For_Life.entity;
 
-import com.example.Graduation_Project_Website_Clean_Food_For_Life.entity.Product;
+
 import jakarta.persistence.*;
 import java.math.BigDecimal;
 
@@ -12,8 +12,10 @@ public class ProductVariant {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "product_id", nullable = false)
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "product_id", nullable = false)
+    @ManyToOne
+    @JoinColumn(name = "product_id", referencedColumnName = "id")
     private Product product;
 
     private int weight;

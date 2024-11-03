@@ -41,6 +41,20 @@ public class Product {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
+
+    // Các thuộc tính mới
+    @Column(nullable = false)
+    private double rating; // Đánh giá sản phẩm
+
+    @Column(name = "reviews_count", nullable = false)
+    private int reviewsCount; // Số lượng đánh giá
+
+    @Column(name = "availability", nullable = false)
+    private boolean availability; // Tình trạng khả dụng
+
+    @Column(name = "additional_info")
+    private String additionalInfo; // Thông tin bổ sung
+
     // Constructors
     public Product() {
         this.createdAt = LocalDateTime.now();
@@ -126,4 +140,6 @@ public class Product {
     protected void onUpdate() {
         this.updatedAt = LocalDateTime.now();
     }
+
+
 }
