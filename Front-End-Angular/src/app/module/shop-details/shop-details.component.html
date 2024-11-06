@@ -363,7 +363,7 @@
                         <i class="fa fa-star" *ngFor="let star of [].constructor(product?.rating)"></i>
                         <span>({{ product?.reviewsCount }} reviews)</span>
                     </div>
-                    <div class="product__details__price">${{ product?.price }}</div>
+                    <div class="product__details__price">{{ product?.price | currency: 'VND':'symbol':'1.0-0'  }}</div>
                     <p>{{ product?.description }}</p>
                     <div class="product__details__quantity">
                         <div class="quantity">

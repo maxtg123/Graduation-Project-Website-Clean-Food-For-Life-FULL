@@ -17,7 +17,8 @@ import {RouterLink} from "@angular/router";
 import { CartComponent } from './module/cart/cart.component';
 import {CarouselModule} from "primeng/carousel";
 import { ShopDetailsComponent } from './module/shop-details/shop-details.component';
-import { ShopingCartComponent } from './module/shoping-cart/shoping-cart.component';
+import {ToastrModule} from "ngx-toastr";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 
 @NgModule({
@@ -30,7 +31,6 @@ import { ShopingCartComponent } from './module/shoping-cart/shoping-cart.compone
     HomeComponent,
     CartComponent,
     ShopDetailsComponent,
-    ShopingCartComponent,
 
 
 
@@ -47,7 +47,9 @@ import { ShopingCartComponent } from './module/shoping-cart/shoping-cart.compone
         NgOptimizedImage,
         ProfileComponent,
         RouterLink,
-        CarouselModule
+        CarouselModule,
+        BrowserAnimationsModule, // Thêm dòng này
+        ToastrModule.forRoot()   // Thêm dòng này
 
     ],
   providers: [],

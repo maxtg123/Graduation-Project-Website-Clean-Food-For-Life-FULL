@@ -14,4 +14,8 @@ export interface Product {
   reviewsCount: number;
   availability: boolean;
   additionalInfo: string;
+
+
+
+  quantity?: number;
 }

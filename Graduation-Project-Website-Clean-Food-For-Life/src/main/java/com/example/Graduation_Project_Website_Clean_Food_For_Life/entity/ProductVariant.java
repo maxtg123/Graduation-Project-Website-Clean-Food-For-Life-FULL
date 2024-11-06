@@ -24,6 +24,17 @@ public class ProductVariant {
 
     private int stockQuantity;
 
+    @Column(name = "image_url")
+    private String imageUrl;
+    public String getImageUrl() {
+        return imageUrl;  // This is the missing method
+    }
+
+    // Setter for imageUrl
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
     // Getters và Setters
     public Long getId() {
         return id;

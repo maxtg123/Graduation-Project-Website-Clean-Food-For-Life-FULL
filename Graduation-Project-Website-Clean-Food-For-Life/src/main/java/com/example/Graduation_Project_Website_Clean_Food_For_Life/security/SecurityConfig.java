@@ -26,7 +26,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/register", "/api/auth/activate", "/api/auth/login").permitAll() // Các đường dẫn công khai
                         .requestMatchers("/api/profile/**").authenticated() // Bảo vệ endpoint cập nhật thông tin
-//                        .requestMatchers("/api/products","/api/products/**","/api/products/image/**").permitAll()
+                        .requestMatchers("/api/cart/items").permitAll()  // Cho phép truy cập công khai
                                 .requestMatchers("/api/products", "/api/products/**", "/api/products/image/**").permitAll()
                                 .anyRequest().authenticated() // Các yêu cầu khác cần xác thực
                 )

@@ -8,7 +8,6 @@ import { AuthGuard } from './auth/auth.guard';
 import {LoginPageComponent} from "./pages/login-page/login-page.component";
 import {ProfileComponent} from "./module/profile/profile.component";
 import {ShopDetailsComponent} from "./module/shop-details/shop-details.component";
-import {ShopingCartComponent} from "./module/shoping-cart/shoping-cart.component";
 
  // Đảm bảo đường dẫn chính xác
 
@@ -29,7 +28,7 @@ const routes: Routes = [
   },
   {
     path: 'shoping-cart',
-    component: ShopingCartComponent
+    component: ShopDetailsComponent
   },
   {
     path: 'register',
